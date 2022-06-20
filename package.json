@@ -1,0 +1,44 @@
+{
+  "name": "flowriter-react",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "alight": "0.14.1",
+    "jquery": "3.4.1",
+    "node-sass": "4.13.1",
+    "react": "16.8.3",
+    "react-dom": "16.8.3",
+    "react-scripts": "3.4.1",
+    "rete": "1.4.1",
+    "rete-alight-render-plugin": "0.1.5",
+    "rete-area-plugin": "0.2.1",
+    "rete-auto-arrange-plugin": "0.4.0",
+    "rete-connection-mastery-plugin": "0.2.4",
+    "rete-connection-path-plugin": "0.3.1",
+    "rete-connection-plugin": "0.7.0",
+    "rete-context-menu-plugin": "0.3.7",
+    "rete-dock-plugin": "0.2.1",
+    "rete-history-plugin": "0.2.1",
+    "rete-minimap-plugin": "0.3.1",
+    "rete-react-render-plugin": "0.2.0",
+    "rete-task-plugin": "0.3.0",
+    "styled-components": "5.1.0"
+  },
+  "devDependencies": {
+    "typescript": "3.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

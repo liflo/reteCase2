@@ -1,0 +1,181 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.App {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.54);
+    width: 100%;
+}
+
+.node {
+    background: #ffffff;
+    display: flex;
+    flex-flow: column;
+    font-family: "Roboto", sans-serif;
+    width: 425px;
+    height: 600px;
+    padding-bottom: 30px;
+}
+
+.node .spacer {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+.node .actions {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+.node:hover {
+    background: #f7f7f7;
+}
+
+.node.selected {
+    background: #ffffff;
+}
+
+.node input {
+    border-radius: 28px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(0, 177, 169);
+    color: rgba(0, 0, 0, 0.87);
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: normal;
+    margin: 0;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 10px 14px;
+    text-indent: 0px;
+    text-rendering: auto;
+    text-shadow: none;
+    text-transform: none;
+    word-spacing: normal;
+}
+
+.node .title,
+.node .output .output-title {
+    color: rgba(0, 0, 0, 0.54);
+    font-family: "Roboto", sans-serif;
+}
+
+.node .input .input-title {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 19px;
+    font-weight: normal;
+    font-family: "Roboto", sans-serif;
+    margin-left: 4px;
+    margin-top: 8px;
+}
+
+.node .input .node-title {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 19px;
+    font-weight: normal;
+    font-family: "Roboto", sans-serif;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.node .connection {
+    opacity: 1;
+}
+
+.node .output .sockets {
+    opacity: 1;
+}
+
+.node .output .actions {
+    margin-right: 20px;
+    margin-bottom: -54px;
+    margin-top: 21px;
+}
+
+.action-title {
+    text-transform: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    line-height: 28px;
+    margin-right: 16px;
+}
+
+.icon {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: white;
+    height: 24px;
+    width: 24px;
+    margin: 0;
+    margin-top: 2px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.bot-container {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.bot {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.87);
+    height: 48px;
+    width: 48px;
+    margin-left: -5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.botOutline {
+    color: rgba(0, 0, 0, 0.87);
+    fill-rule: evenodd;
+    fill: black;
+}
+
+.botEyesOn {
+    color: rgba(0, 0, 0, 0.87);
+    fill-rule: evenodd;
+    fill: rgb(0, 177, 169);
+}
+
+.botEyesOff {
+    color: rgba(0, 0, 0, 0.87);
+    fill-rule: evenodd;
+    fill: rgb(114, 114, 114);
+}
+
+.dock {
+    height: 100px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.dock-item {
+    display: inline-block;
+    vertical-align: top;
+    transform: scale(0.4);
+    transform-origin: 20% 15vh;
+    opacity: 0.65;
+    transition: all 0.3s ease;
+}
+
+.dock-item:hover {
+    opacity: 0.9;
+    transform: scale(0.6);
+}
